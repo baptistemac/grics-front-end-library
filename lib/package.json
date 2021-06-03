@@ -5,7 +5,7 @@
   "scripts": {
     "lib:build": "vue-cli-service build --target lib --name gricsLib ./src/lib.js",
     "lib:build-css": "npx tailwindcss@latest build src/styles/index.css -o dist/index.css",
-    "lib:publish": "npm run lib:build && npm publish --access public",
+    "lib:publish": "npm run lib:build && lib:build-css && npm publish --access public",
     "lint": "vue-cli-service lint",
     "website:serve": "vue-cli-service serve",
     "website:build": "vue-cli-service build",
