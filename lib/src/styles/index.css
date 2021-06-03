@@ -1,23 +1,8 @@
-@tailwind components;
-@tailwind utilities;
-
 /* Base */
 @import 'base/bg-color.css';
-/* @import 'base/border-color.css'; */
 @import 'base/color.css';
 @import 'base/headings.css';
 @import 'base/typography.css';
-
-
-/* Base html */
-html {
-    color: var(--color-neutral-primary);
-    font-family: var(--font-family-primary);
-}
-
-
-/* Utilities */
-
 
 
 /* Theme: Default */
@@ -38,6 +23,18 @@ html {
 @import 'themes/high-contrast/index.css';
 
 
+/* Utilities */
+@tailwind components;
+@tailwind utilities;
+
+
+/* Base html */
+html {
+    color: var(--color-neutral-primary);
+    font-family: var(--font-family-primary);
+}
+
+/* custom */
 .border {
     border-style: solid;
 }

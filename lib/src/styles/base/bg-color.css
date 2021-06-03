@@ -1,41 +1,38 @@
 
 /* Backgrounds colors */
 
-.bg-color {
+.bg-color-ground {
+    background-color: var(--color-bg-ground );
+}
 
-    &-ground {
-        background-color: var(--color-bg-ground );
-    }
+.bg-color-underground {
+    background-color: var(--color-bg-underground );
+}
 
-    &-underground {
-        background-color: var(--color-bg-underground );
-    }
+.bg-color-action-primary {
+    background-color: var(--color-bg-action-primary );
+}
 
-    &-action-primary {
-        background-color: var(--color-bg-action-primary );
-    }
+.bg-color-action-primary-hover {
+    background-color: var(--color-bg-action-primary-hover );
+}
 
-    &-action-primary-hover {
-        background-color: var(--color-bg-action-primary-hover );
-    }
+.bg-color-action-secondary {
+    background-color: var(--color-bg-action-secondary );
+}
 
-    &-action-secondary {
-        background-color: var(--color-bg-action-secondary );
-    }
+.bg-color-action-secondary-hover {
+    background-color: var(--color-bg-action-secondary-hover );
+}
 
-    &-action-secondary-hover {
-        background-color: var(--color-bg-action-secondary-hover );
-    }
+.bg-color-action-no-bg-hover {
+    background-color: var(--color-bg-action-no-bg-hover );
+}
 
-    &-action-no-bg-hover {
-        background-color: var(--color-bg-action-no-bg-hover );
-    }
+.bg-color-action-disabled {
+    background-color: var(--color-bg-action-disabled );
+}
 
-    &-action-disabled {
-        background-color: var(--color-bg-action-disabled );
-    }
-
-    &-action-selected {
-        background-color: var(--color-bg-action-selected );
-    }
+.bg-color-action-selected {
+    background-color: var(--color-bg-action-selected );
 }

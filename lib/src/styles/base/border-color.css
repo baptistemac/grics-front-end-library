@@ -1,12 +1,10 @@
 
-.border-color {
+/* Border colors */
 
-    &-primary {
-        border-color: var(--color-stroke-primary );
-    }
+.border-color-primary {
+    border-color: var(--color-stroke-primary );
+}
 
-    &-secondary {
-        border-color: var(--color-stroke-secondary );
-    }
-
+.border-color-secondary {
+    border-color: var(--color-stroke-secondary );
 }
