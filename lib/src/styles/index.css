@@ -1,0 +1,20 @@
+@tailwind components;
+
+
+/* Base */
+@import 'base/bg-color.css';
+@import 'base/color.css';
+
+
+/* Utilities */
+@tailwind utilities;
+
+
+/* Theme: Default */
+@import 'themes/default/color.css';
+
+/* Theme: Expert */
+@import 'themes/expert/index.css';
+
+/* Theme: High-contrast */
+@import 'themes/high-contrast/index.css';

@@ -9,6 +9,7 @@
 
 <script>
 import Components from './components'
+import './styles/index.css';
 
 export default {
   name: 'App',

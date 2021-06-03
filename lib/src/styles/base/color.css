@@ -1,0 +1,17 @@
+
+/* Text/Content colors */
+
+.color {
+
+    &-neutral-primary {
+        color: var(--color-neutral-primary );
+    }
+
+    &-neutral-secondary {
+        color: var(--color-neutral-secondary );
+    }
+
+    &-neutral-tertiary {
+        color: var(--color-neutral-tertiary );
+    }
+}
