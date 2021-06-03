@@ -1,14 +1,14 @@
 {
   "name": "grics-front-end-library",
-  "version": "0.1.2",
+  "version": "0.1.8",
   "private": false,
   "scripts": {
     "lib:build": "vue-cli-service build --target lib --name gricsLib ./src/lib.js",
     "lib:build-css": "npx tailwindcss@latest build src/styles/index.css -o dist/index.css && cp -r ./src/styles/base ./dist && cp -r ./src/styles/themes ./dist",
     "lib:publish": "npm run lib:build && npm run lib:build-css && npm publish --access public",
     "lint": "vue-cli-service lint",
-    "website:serve": "vue-cli-service serve",
-    "website:build": "vue-cli-service build",
+    "website:serve": "vue-cli-service serve ./src/App.js",
+    "website:build": "vue-cli-service build ./src/App.js",
     "storybook:start": "start-storybook -p 6006",
     "storybook:build": "build-storybook"
   },

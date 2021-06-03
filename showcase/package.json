@@ -5,11 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "update:gLib": "npm install grics-front-end-library@latest && npm list grics-front-end-library"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "grics-front-end-library": "^0.1.7",
+    "grics-front-end-library": "^0.1.8",
     "vue": "^3.0.0"
   },
   "devDependencies": {
