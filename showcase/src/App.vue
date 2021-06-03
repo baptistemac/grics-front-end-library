@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import '../node_modules/grics-front-end-library/dist/index.css'
 
 import Components from 'grics-front-end-library'
 
