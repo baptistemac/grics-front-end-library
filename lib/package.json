@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "lib:build": "vue-cli-service build --target lib --name gricsLib ./src/lib.js",
     "lint": "vue-cli-service lint",
+    "website:serve": "vue-cli-service serve",
+    "website:build": "vue-cli-service build",
     "storybook:start": "start-storybook -p 6006",
     "storybook:build": "build-storybook"
   },

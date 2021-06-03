@@ -47,3 +47,6 @@ npx tailwindcss init -p
 npm install -D postcss-nested postcss-import --force
 
 ## Document button with theme and reversed
+
+## Build library
+package.json: Add "vue-cli-service build --target lib --name gricsLib ./src/lib.js".
