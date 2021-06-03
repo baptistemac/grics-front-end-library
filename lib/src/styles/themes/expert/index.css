@@ -3,11 +3,25 @@
 
     /* Color */
 
+    --color-brand-hsl               : 358deg, 87%, 45%;
+
     --color-bg-action-primary-hsl   : 358deg, 39%, 80%;
     --color-bg-action-primary       : hsl( var(--color-bg-action-primary-hsl) );
 
     .reversed {
+        --color-brand-hsl               : 358deg, 87%, 50%;
+
         --color-bg-action-primary-hsl   : 358deg, 87%, 45%;
         --color-bg-action-primary       : hsl( var(--color-bg-action-primary-hsl) );
     }
+
+    /* Spacing */
+
+    --spacing-small     : 2px;
+    --spacing-medium    : 4px;
+    --spacing-large     : 8px;
+
+    /* Contextual */
+
+    --sidebar-padding   : var(--spacing-small);
 }

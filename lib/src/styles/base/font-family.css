@@ -1,0 +1,13 @@
+
+/* Text colors */
+
+.font-family {
+
+    &-primary {
+        font-family: var(--font-family-primary);
+    }
+
+    &-secondary {
+        font-family: var(--font-family-secondary);
+    }
+}
