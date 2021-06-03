@@ -1,15 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div>
+        <img alt="Vue logo" src="./assets/logo.png">
+        <g-button label='label' />
+        <g-button label='label' hierarchy='secondary' />
+        <g-card title='Ceci est une carte' buttonLabel='label' />
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Components from './components'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ...Components
   }
 }
 </script>
