@@ -28,3 +28,5 @@ npm run build-storybook
 
 ## Free MDX doc
 
+## Install SB v6.3.0-beta.10
+npm install @storybook/addon-docs@6.3.0-beta.10 --force
