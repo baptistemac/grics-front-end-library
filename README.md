@@ -42,3 +42,6 @@ npx tailwindcss init -p
 
 ## Create color styles
 ## Variables CSS
+
+## Install postcss plugin
+npm install -D postcss-nested postcss-import --force
