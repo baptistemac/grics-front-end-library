@@ -17,3 +17,7 @@ npx sb init
 ## Check
 npm run storybook
 npm run build-storybook
+
+## Explore /.storybook
+
+## Create Story in JS
