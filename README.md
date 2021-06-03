@@ -13,3 +13,7 @@ npm run build
 # Install Storybook
 cd lib
 npx sb init
+
+## Check
+npm run storybook
+npm run build-storybook
