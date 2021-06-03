@@ -66,3 +66,8 @@ npm install --save grics-front-end-library
 
 
 ## Tests manuels
+
+## Tests automatisés
+npm install --save-dev chromatic
+npx chromatic --project-token=fc9c8f05ac67
+Continue setup at https://www.chromatic.com/setup?appId=60b91e4efa5fd40039094e6a
