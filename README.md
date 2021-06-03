@@ -37,3 +37,8 @@ npm install @storybook/addon-docs@6.3.0-beta.10 --force
 npm uninstall tailwindcss postcss autoprefixer
 npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9 --force
 npx tailwindcss init -p
+
+## Config Tailwind
+
+## Create color styles
+## Variables CSS
