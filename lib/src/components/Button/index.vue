@@ -9,9 +9,20 @@
         name: 'g-button',
         inheritAttrs: false,
         props: {
-            label       : String,
-            hierarchy   : String,
-            size        : String,
+            /** C'est pratique pour écrire un label. */
+            label: {
+                type: String,
+                required: true,
+                default: 'Turlututu'
+            },
+            size: {
+                type: String,
+                validator: (prop) => [ 'small', 'medium', 'large' ].includes(prop)
+            },
+            hierarchy: {
+                type: String,
+                validator: (prop) => [ 'primary', 'secondary' ].includes(prop)
+            },
         },
         data() {
             return {
