@@ -30,3 +30,10 @@ npm run build-storybook
 
 ## Install SB v6.3.0-beta.10
 npm install @storybook/addon-docs@6.3.0-beta.10 --force
+
+## Tailwind introduction
+
+## Tailwind install
+npm uninstall tailwindcss postcss autoprefixer
+npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9 --force
+npx tailwindcss init -p
