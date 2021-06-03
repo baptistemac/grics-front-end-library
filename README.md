@@ -57,3 +57,8 @@ npm publish --access public
 
 ## Build base CSS
 package.json: Add "lib:build-css": "npx tailwindcss@latest build src/styles/index.css -o dist/index.css".
+
+## Install in a `showcase` project
+vue create showcase
+cd showcase
+npm run serve
