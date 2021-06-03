@@ -1,15 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div>
+        <h1>Showcase</h1>
+        <g-button hierarchy='primary' label='Primary' />
+        <g-button hierarchy='secondary' label='Secondary' />
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import Components from 'grics-front-end-library'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ...Components,
   }
 }
 </script>

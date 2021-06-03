@@ -62,3 +62,4 @@ package.json: Add "lib:build-css": "npx tailwindcss@latest build src/styles/inde
 vue create showcase
 cd showcase
 npm run serve
+npm install --save grics-front-end-library
