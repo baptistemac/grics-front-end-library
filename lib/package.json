@@ -1,15 +1,23 @@
 {
-  "name": "lib",
-  "version": "0.1.0",
-  "private": true,
+  "name": "grics-front-end-library",
+  "version": "0.1.1",
+  "private": false,
   "scripts": {
     "lib:build": "vue-cli-service build --target lib --name gricsLib ./src/lib.js",
+    "lib:publish": "npm run lib:build && npm publish --access public",
     "lint": "vue-cli-service lint",
     "website:serve": "vue-cli-service serve",
     "website:build": "vue-cli-service build",
     "storybook:start": "start-storybook -p 6006",
     "storybook:build": "build-storybook"
   },
+  "main": "./dist/gricsLib.common.js",
+  "files": [
+    "dist/*",
+    "src/assets/*",
+    "*.json",
+    "*.js"
+  ],
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^3.0.0"

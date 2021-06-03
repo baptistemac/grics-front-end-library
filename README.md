@@ -50,3 +50,7 @@ npm install -D postcss-nested postcss-import --force
 
 ## Build library
 package.json: Add "vue-cli-service build --target lib --name gricsLib ./src/lib.js".
+
+## Publish library to NPM
+npm whoami
+npm publish --access public 
