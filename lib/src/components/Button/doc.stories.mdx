@@ -45,9 +45,29 @@ export const TemplateAll = (args) => ({
   components: { GButton },
   setup() { return { args } },
   template: `
-    <div>
-        <g-button label='Primary' hierarchy='primary' v-bind='$props'/>
-        <g-button label='Secondary' hierarchy='secondary' v-bind='$props'/>
+    <div class='flex flex-row gap-4'>
+        <div>
+            <h3>Theme default</h3>
+            <div class='reversed bg-color-ground p-4'>
+                <g-button v-bind='args' label='Primary' />
+                <g-button v-bind='args' label='Secondary' hierarchy='secondary' />
+            </div>
+            <div class='p-4'>
+                <g-button v-bind='args' label='Primary' />
+                <g-button v-bind='args' label='Secondary' hierarchy='secondary' />
+            </div>
+        </div>
+        <div data-theme='expert'>
+            <h3>Theme expert</h3>
+            <div class='reversed bg-color-ground p-4'>
+                <g-button v-bind='args' label='Primary' />
+                <g-button v-bind='args' label='Secondary' hierarchy='secondary' />
+            </div>
+            <div class='p-4'>
+                <g-button v-bind='args' label='Primary' />
+                <g-button v-bind='args' label='Secondary' hierarchy='secondary' />
+            </div>
+        </div>
     </div>
     `,
 });

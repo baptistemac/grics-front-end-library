@@ -1,5 +1,5 @@
 <template>
-    <button type='button' class='btn' :class="classes">
+    <button :class="classes">
         {{ label }}
     </button>
 </template>
@@ -13,11 +13,11 @@
             label: {
                 type: String,
                 required: true,
-                default: 'Turlututu'
             },
             size: {
                 type: String,
-                validator: (prop) => [ 'small', 'medium', 'large' ].includes(prop)
+                validator: (prop) => [ 'small', 'medium', 'large' ].includes(prop),
+                default: 'small'
             },
             hierarchy: {
                 type: String,
@@ -27,8 +27,9 @@
         data() {
             return {
                 classes: {
-                    'btn--primary'  : (this.hierarchy !== 'secondary'),
-                    'btn--secondary': (this.hierarchy === 'secondary'),
+                    'color-neutral-primary px-3 py-2 rounded-small cursor-pointer': true,
+                    'bg-color-action-primary border-none btn--primary'  : (this.hierarchy !== 'secondary'),
+                    'border border-solid bg-transparent border-primary btn--secondary': (this.hierarchy === 'secondary'),
                 }
             }
         }
@@ -36,16 +37,5 @@
 </script>
 
 <style scoped>
-    .btn {
-        border: none;
-        padding: .5rem 1rem;
-        border-radius: 4px;
-        background-color: navajowhite;
-        cursor: pointer;
-    }
-
-    .btn--secondary {
-        border: 1px solid navajowhite;
-        background-color: transparent;
-    }
+    /* Rien n'a voir :) */
 </style>

@@ -1,9 +1,9 @@
 @tailwind components;
-
+@tailwind utilities;
 
 /* Base */
 @import 'base/bg-color.css';
-@import 'base/border-color.css';
+/* @import 'base/border-color.css'; */
 @import 'base/color.css';
 @import 'base/headings.css';
 @import 'base/typography.css';
@@ -17,7 +17,7 @@ html {
 
 
 /* Utilities */
-@tailwind utilities;
+
 
 
 /* Theme: Default */
@@ -37,3 +37,7 @@ html {
 @import 'themes/high-contrast/index.css';
 @import 'themes/high-contrast/index.css';
 
+
+.border {
+    border-style: solid;
+}
