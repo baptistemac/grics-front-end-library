@@ -12,7 +12,10 @@
         name: 'g-card',
         components: { GButton },
         props: {
-            title       : String,
+            title       : {
+                type: String,
+                default: 'Ceci est une card'
+            },
             buttonLabel : String,
         }
     }

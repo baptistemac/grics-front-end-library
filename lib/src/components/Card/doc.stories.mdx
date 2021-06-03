@@ -1,0 +1,66 @@
+import { Meta, Preview, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import GCard from '.';
+
+
+<Meta
+    title='Components/Card'
+    component={GCard}
+    parameters={{
+        layout :'centered'
+    }}
+    argTypes={{
+    }}
+/>
+
+export const TemplateMaster = (args) => ({
+  components: { GCard },
+  setup() { return { args } },
+  template: `<g-card v-bind='args' />`,
+});
+
+
+# Card
+
+With `MDX`, we can define a story for `Button` right in the middle of our **Markdown documentation**.
+
+<Canvas>
+  <Story
+    name='Master'
+    args={{
+      title: 'Ceci est la card de la story Master',
+      buttonLabel: 'Master',
+    }}
+  >
+    {TemplateMaster.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story='Master' />
+
+
+## All
+
+<Canvas>
+  <Story
+    name='All'
+    args={{
+      title: 'Ceci est la card de la story All',
+      buttonLabel: 'All',
+    }}
+  >
+    {TemplateMaster.bind({})}
+  </Story>
+</Canvas>
+
+
+### Implementation example
+
+```jsx
+// npm install hello
+
+<hello-world />
+```
+
+<aside>
+    <p>le html est <strong>permis</strong></p>
+</aside>
