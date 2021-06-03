@@ -8,3 +8,8 @@ vue create lib
 cd lib
 npm run serve
 npm run build
+
+## Create Components
+# Install Storybook
+cd lib
+npx sb init
