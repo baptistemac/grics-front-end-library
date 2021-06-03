@@ -45,3 +45,5 @@ npx tailwindcss init -p
 
 ## Install postcss plugin
 npm install -D postcss-nested postcss-import --force
+
+## Document button with theme and reversed
