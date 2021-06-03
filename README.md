@@ -63,3 +63,6 @@ vue create showcase
 cd showcase
 npm run serve
 npm install --save grics-front-end-library
+
+
+## Tests manuels
