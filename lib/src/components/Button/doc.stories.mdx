@@ -1,0 +1,98 @@
+import { Meta, Preview, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import GButton from '.';
+
+
+<Meta
+    title='Components/Grics Button MDX'
+    component={GButton}
+    parameters={{
+        layout :'centered'
+    }}
+    argTypes={{
+        hierarchy : {
+            control: {
+                type: 'select', 
+                options: ['primary', 'secondary']
+            }
+        },
+        size : {
+            control: {
+                type: 'select',
+                options: ['small', 'medium', 'large']
+            }
+        },
+        reversed : {
+            description: 'Passer en mode reversed',
+            control: { type: 'boolean' },
+            type: { name: 'boolean', required: false },
+            table: {
+                type: { summary: 'boolean' },
+                defaultValue: { summary: false }
+            },
+        },
+        color : { control: { type: 'color' } },
+    }}
+/>
+
+export const TemplateMaster = (args) => ({
+  components: { GButton },
+  setup() { return { args } },
+  template: `<g-button v-bind='args' />`,
+});
+
+
+export const TemplateAll = (args) => ({
+  components: { GButton },
+  setup() { return { args } },
+  template: `
+    <div>
+        <g-button label='Primary' hierarchy='primary' v-bind='$props'/>
+        <g-button label='Secondary' hierarchy='secondary' v-bind='$props'/>
+    </div>
+    `,
+});
+
+
+# Button
+
+With `MDX`, we can define a story for `Button` right in the middle of our **Markdown documentation**.
+
+<Canvas>
+  <Story
+    name='Master'
+    args={{
+      label: 'Master',
+    }}
+  >
+    {TemplateMaster.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story='default' />
+
+
+## Second use case
+
+<Canvas>
+  <Story
+    name='All'
+    args={{
+      label: 'Coucou',
+    }}
+  >
+    {TemplateAll.bind({})}
+  </Story>
+</Canvas>
+
+
+### Implementation example
+
+```jsx
+// npm install hello
+
+<hello-world />
+```
+
+<aside>
+    <p>le html est <strong>permis</strong></p>
+</aside>
