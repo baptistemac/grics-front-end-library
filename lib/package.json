@@ -1,9 +1,10 @@
 {
   "name": "grics-front-end-library",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "scripts": {
     "lib:build": "vue-cli-service build --target lib --name gricsLib ./src/lib.js",
+    "lib:build-css": "npx tailwindcss@latest build src/styles/index.css -o dist/index.css",
     "lib:publish": "npm run lib:build && npm publish --access public",
     "lint": "vue-cli-service lint",
     "website:serve": "vue-cli-service serve",

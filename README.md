@@ -54,3 +54,6 @@ package.json: Add "vue-cli-service build --target lib --name gricsLib ./src/lib.
 ## Publish library to NPM
 npm whoami
 npm publish --access public 
+
+## Build base CSS
+package.json: Add "lib:build-css": "npx tailwindcss@latest build src/styles/index.css -o dist/index.css".
