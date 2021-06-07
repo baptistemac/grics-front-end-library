@@ -62,7 +62,7 @@
 
     /* Background Actions */
 
-    --color-bg-action-primary-hsl            : 174deg, 75%, 64%;
+    --color-bg-action-primary-hsl            : 254deg, 75%, 64%;
     --color-bg-action-primary                : hsl( var(--color-bg-action-primary-hsl) );
     
     --color-bg-action-primary-hover-hsl      : 49deg, 99%, 43%;
