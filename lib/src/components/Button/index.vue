@@ -27,7 +27,7 @@
         data() {
             return {
                 classes: {
-                    'color-neutral-primary px-3 py-2 rounded-small cursor-pointer': true,
+                    'color-neutral-primary px-3 py-3 rounded-small cursor-pointer': true,
                     'bg-color-action-primary border-none btn--primary'  : (this.hierarchy !== 'secondary'),
                     'border border-solid bg-transparent border-primary btn--secondary': (this.hierarchy === 'secondary'),
                 }

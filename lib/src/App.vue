@@ -4,6 +4,7 @@
         <g-button label='label' />
         <g-button label='label' hierarchy='secondary' />
         <g-card title='Ceci est une carte' buttonLabel='label' />
+        
     </div>
 </template>
 
